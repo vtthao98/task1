@@ -1,0 +1,14 @@
+export { DonVi } from './don_vi.model';
+export { TacGia, GioiTinh } from './tac_gia.model';
+export { NhiemVuBVMT, LoaiNhiemVu } from './nhiem_vu_bvmt.model';
+export { BaiBao, MucXepHang, DanhMucXepHang } from './bai_bao.model';
+export { TacGia_NhiemVu } from './chiu_trach_nhiem.model';
+export { ChuyenGiao, TinhTrang } from './chuyen_giao.model';
+export { GiaiThuong } from './giai_thuong.model';
+export { NghiemThu, CapNghiemThu } from './nghiem_thu.model';
+export { TacGia_GiaiThuong } from './khen_thuong.model';
+export { KinhPhi } from './kinh_phi.model';
+export { NhiemVuKHCN, LoaiNhiemVuKHCN } from './nhiem_vu_khcn.model';
+export { Sach, LoaiSach } from './sach.model';
+export { TaiKhoan } from './tai_khoan.model';
+export { TaiSan, LoaiCongTrinh } from './tai_san.model';

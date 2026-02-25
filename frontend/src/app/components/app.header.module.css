@@ -1,0 +1,150 @@
+.header {
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1000;
+}
+
+/* ===== TOP BAR ===== */
+.topbar {
+  background: linear-gradient(to right, #0b4f7b, #073a5a);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4px 0;
+}
+
+.topInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.brandWrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logoMain {
+  padding: 6px 12px;
+  font-weight: 800;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+.title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== ADMIN BADGE (LOGO SÁNG) ===== */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.adminBadge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 209, 178, 0.05);
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1.5px solid rgba(0, 209, 178, 0.4);
+  box-shadow: 0 0 15px rgba(0, 209, 178, 0.15);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.adminBadge:hover {
+  background: rgba(0, 209, 178, 0.15);
+  box-shadow: 0 0 20px rgba(0, 209, 178, 0.4);
+  transform: translateY(-2px);
+}
+
+.adminIcon {
+  color: #00ffd5;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 0 5px rgba(0, 255, 213, 0.8));
+}
+
+.adminInfo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.adminLabel {
+  font-size: 9px;
+  font-weight: 800;
+  color: #00ffd5;
+  letter-spacing: 1px;
+}
+
+.adminName {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.logout {
+  color: #ff9999;
+  text-decoration: none !important; /* Xóa gạch chân */
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.logout:hover {
+  color: #ffffff;
+  text-decoration: none !important;
+}
+
+/* ===== MENU BAR (XÓA GẠCH CHÂN) ===== */
+.menubar {
+  background: #136a9a !important;
+  padding: 0 !important;
+}
+
+.tab {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600;
+  padding: 15px 25px !important;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  text-decoration: none !important; /* XÓA GẠCH CHÂN THẲNG */
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffce3e !important;
+  text-decoration: none !important; /* ĐẢM BẢO KHÔNG BỊ GẠCH CHÂN KHI HOVER */
+}
+
+/* Giữ lại thanh trượt màu vàng phía dưới để làm điểm nhấn (có thể xóa nếu không thích) */
+.tab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ffce3e;
+  transition: width 0.3s ease;
+}
+
+.tab:hover::after {
+  width: 100%;
+}

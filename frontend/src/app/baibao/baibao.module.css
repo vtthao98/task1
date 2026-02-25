@@ -1,0 +1,64 @@
+.container {
+  padding: 30px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.pageHeader {
+  margin-bottom: 25px;
+}
+
+.tableCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border: none;
+  overflow: hidden;
+}
+
+.customTable thead {
+  background-color: #f1f5f9;
+}
+
+.customTable th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #64748b;
+  padding: 15px;
+  border: none;
+}
+
+.customTable td {
+  vertical-align: middle;
+  padding: 15px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.articleTitle {
+  font-weight: 600;
+  color: #0f172a;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.doiBadge {
+  font-family: "Monaco", monospace;
+  font-size: 11px;
+  background: #e2e8f0;
+  color: #475569;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.actionBtn {
+  border-radius: 8px;
+  padding: 6px 12px;
+  transition: all 0.2s;
+}
+
+.actionBtn:hover {
+  transform: translateY(-2px);
+}

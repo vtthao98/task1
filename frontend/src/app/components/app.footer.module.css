@@ -1,0 +1,80 @@
+.footer {
+  background: #083a5a; /* Xanh đậm hơn header */
+  color: #eaf6ff;
+  padding: 60px 0 20px 0;
+  margin-top: 50px;
+  border-top: 4px solid #00d1b2; /* Viền màu xanh neon làm điểm nhấn */
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr; /* Chia tỉ lệ các cột */
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column .heading {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Dấu gạch nhỏ dưới tiêu đề cột */
+.column .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #00d1b2;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.list a {
+  color: #eaf6ff;
+  text-decoration: none !important; /* Xóa gạch chân */
+  transition: all 0.2s ease;
+  opacity: 0.8;
+}
+
+.list a:hover {
+  color: #ffce3e !important; /* Đổi sang màu vàng khi hover giống Menu */
+  opacity: 1;
+  padding-left: 5px; /* Hiệu ứng dịch chuyển nhẹ */
+}
+
+.bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+}
